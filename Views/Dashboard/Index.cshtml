@@ -1,0 +1,163 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Threat Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Cyberpunk Theme */
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background-color: #0d0d0d;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        /* Add a futuristic font */
+        @@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #1a1a1a;
+            color: #00ff9f;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 2px solid #f72585;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        /* Neon button styles */
+        .btn {
+            background-color: #00ff9f;
+            color: #0d0d0d;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #f72585;
+            color: white;
+        }
+        /* Cyberpunk chart container */
+        .chart-container {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border: 2px solid #00ff9f;
+            box-shadow: 0 0 15px #f72585;
+        }
+        .chart {
+            width: 100%;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cyber Threat Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="chart-container">
+            <canvas id="threatChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="attackTypesChart"></canvas>
+        </div>
+        <button class="btn" onclick="fetchRealTimeData()">Update Data</button>
+    </div>
+    <script>
+        // Data for charts (can be updated with real-time data)
+        const threatData = {
+            labels: ['Threat 1', 'Threat 2', 'Threat 3', 'Threat 4', 'Threat 5'],
+            datasets: [{
+                label: 'Number of Threats',
+                backgroundColor: '#f72585',
+                borderColor: '#00ff9f',
+                data: [5, 10, 3, 15, 7],
+            }]
+        };
+        const attackTypeData = {
+            labels: ['Phishing', 'Malware', 'Ransomware', 'DoS', 'Spyware'],
+            datasets: [{
+                label: 'Types of Attacks',
+                backgroundColor: ['#f72585', '#00ff9f', '#4361ee', '#3a0ca3', '#4cc9f0'],
+                data: [12, 19, 7, 5, 3],
+            }]
+        };
+        // Configuring the threat chart
+        const threatChartConfig = {
+            type: 'bar',
+            data: threatData,
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#f72585'
+                        },
+                        ticks: {
+                            color: '#00ff9f'
+                        }
+                    },
+                    x: {
+                        grid: {
+                            color: '#f72585'
+                        },
+                        ticks: {
+                            color: '#00ff9f'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#00ff9f'
+                        }
+                    }
+                }
+            }
+        };
+        // Configuring the attack type chart
+        const attackTypesChartConfig = {
+            type: 'pie',
+            data: attackTypeData,
+            options: {
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: '#00ff9f'
+                        }
+                    }
+                }
+            }
+        };
+        // Initialize the charts
+        const threatChart = new Chart(
+            document.getElementById('threatChart'),
+            threatChartConfig
+        );
+        const attackTypesChart = new Chart(
+            document.getElementById('attackTypesChart'),
+            attackTypesChartConfig
+        );
+        // Example function to fetch real-time data
+        function fetchRealTimeData() {
+            // This function can be modified to fetch actual data from a server or API
+            alert('Fetching new data...');
+        }
+    </script>
+</body>
+</html>

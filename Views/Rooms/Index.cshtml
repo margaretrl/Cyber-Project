@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Room>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New TryHackMe Rooms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">New TryHackMe Rooms</h1>
+        <p>
+            Go to <a href="https://www.tryhackme.com/">TryHackMe</a> and search for these rooms to learn more about cybersecurity and practice your skills!
+        </p>
+
+        <div class="row">
+            @foreach (var room in Model)
+            {
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm room-card">
+                        <img src="@room.ImageURL" class="card-img-top" alt="@room.Title" style="height:200px; object-fit: cover;" />
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title"><b>@room.Title</b></h5>
+                            <p class="card-text"><strong>Type:</strong> @room.Type</p>
+                            <p class="card-text"><strong>Code:</strong> @room.Code</p>
+                            <p class="card-text"><strong>Creator:</strong> @room.Creator</p>
+                            <p class="card-text text-secondary">
+                                <strong>Description:</strong><br /> @room.Description
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+<style>
+    .room-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .room-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+</style>

@@ -1,0 +1,141 @@
+/* Base Styles */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html, body {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Give enough space for the footer */
+    margin-bottom: 60px;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the height of the footer */
+}
+
+
+/* Toggle button styling */
+.toggle-btn {
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .toggle-btn:hover {
+        background-color: #00ffcc;
+    }
+
+/* Base button styles */
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+    outline: none;
+}
+
+/* Cyberpunk Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #00ffcc;
+}
+
+.dark-mode .btn {
+    background-color: #ff007f;
+    color: white;
+    border: none;
+}
+
+    .dark-mode .btn:hover {
+        background-color: #00ffcc;
+    }
+
+.dark-mode .form-control, .dark-mode .form-check-input {
+    background-color: #1c1c1c;
+    color: #00ffcc;
+    border: 1px solid #00ffcc;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3 {
+    color: #ff007f;
+}
+
+.dark-mode ul {
+    color: #00ffcc;
+}
+
+.poster {
+    max-width: 800px;
+    max-height: 400px;
+}
+
+/* Cyberpunk Light Mode */
+body.light-mode {
+    background-color: #f0f0f0;
+    color: #2e2e2e;
+}
+
+.light-mode .btn {
+    background-color: #258cfb;
+    color: white;
+}
+
+    .light-mode .btn:hover {
+        background-color: #ff007f;
+    }
+
+.light-mode .form-control, .light-mode .form-check-input {
+    background-color: white;
+    color: #2e2e2e;
+    border: 1px solid #258cfb;
+}
+
+.light-mode h1, .light-mode h2, .light-mode h3 {
+    color: #258cfb;
+}
+
+.light-mode ul {
+    color: #258cfb;
+}
+
+/* Style for the toggle button */
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: #333; /* Adjust the color based on your navbar theme */
+    font-size: 1.5rem; /* Icon size */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+    .toggle-btn:focus {
+        outline: none;
+    }
+
+    .toggle-btn:hover {
+        color: #ff007f; /* Hover color */
+    }
+
+/* Change color when in dark mode */
+body.dark-mode .toggle-btn {
+    color: #fff;
+}

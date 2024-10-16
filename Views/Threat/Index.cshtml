@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "VirusTotal URL Scan";
+}
+
+<h2>Check URL for Cybersecurity Threats</h2>
+
+<form asp-action="CheckUrl" method="post">
+    <div class="form-group">
+        <label for="urlInput">Enter URL:</label>
+        <input type="text" id="urlInput" name="url" class="form-control" placeholder="https://example.com" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Check URL</button>
+</form>

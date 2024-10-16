@@ -17,6 +17,8 @@
 		<PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4" />
+		<PackageReference Include="RestSharp" Version="112.1.0" />
+		<PackageReference Include="VirusTotalNet" Version="2.2.0" />
 	</ItemGroup>
 
 

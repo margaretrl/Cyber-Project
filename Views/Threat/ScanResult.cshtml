@@ -1,0 +1,30 @@
+﻿@model VirusTotalNet.Results.UrlReport
+
+<h2>Scan Results for URL</h2>
+
+@if (Model != null)
+{
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Scan Results</h5>
+            <p><strong>URL (Resource):</strong> @Model.Resource</p>
+            <p><strong>Scan Date:</strong> @Model.ScanDate</p>
+            <p><strong>Positives:</strong> @Model.Positives/@Model.Total</p>
+
+            <h4>Scans:</h4>
+            <ul>
+                @foreach (var scan in Model.Scans)
+                {
+                    <li>
+                        <strong>@scan.Key:</strong> Detected: @scan.Value.Detected
+                    </li>
+                }
+            </ul>
+            <p><a href="@Model.Permalink" target="_blank" class="btn btn-primary">View Full Report</a></p>
+        </div>
+    </div>
+}
+else
+{
+    <p>No scan data available.</p>
+}

@@ -26,8 +26,17 @@ namespace CyberProj
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
+            // Add endpoint mapping here
+            app.UseEndpoints(endpoints =>
+            {
+                endpoints.MapControllerRoute(
+                    name: "default",
+                    pattern: "{controller=Threat}/{action=Index}/{id?}");
+            });
+
 
             app.Run();
+
         }
     }
 }

@@ -49,12 +49,5 @@
     "C:\\Users\\jmfafis\\.nuget\\packages\\system.threading.channels\\6.0.0\\system.threading.channels.6.0.0.nupkg.sha512",
     "C:\\Users\\jmfafis\\.nuget\\packages\\virustotalnet\\2.2.0\\virustotalnet.2.2.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

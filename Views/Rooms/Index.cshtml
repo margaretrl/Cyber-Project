@@ -18,14 +18,14 @@
             @foreach (var room in Model)
             {
                 <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="card h-100 shadow-sm room-card" onclick="window.location.href = 'https://tryhackme.com/r/hacktivities/search?page=1&kind=all&searchText=@room.Code'">
+                    <div class="card h-100 shadow-sm room-card" onclick="window.location.href = 'https://tryhackme.com/r/room/@room.Code'">
                         <img src="@room.ImageURL" class="card-img-top" alt="@room.Title" style="height:200px; object-fit: cover;" />
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title"><b>@room.Title</b></h5>
                             <p class="card-text"><strong>Type:</strong> @room.Type</p>
                             <p class="card-text"><strong>Code:</strong> @room.Code</p>
                             <p class="card-text"><strong>Creator:</strong> @room.Creator</p>
-                            <p class="card-text"><strong>Link:</strong><a href="https://tryhackme.com/r/hacktivities/search?page=1&kind=all&searchText=@room.Code"> Click Here</a> </p>
+                            <p class="card-text"><strong>Link:</strong><a href="https://tryhackme.com/r/room/@room.Code"> Click Here</a> </p>
                             <p class="card-text text-secondary">
                                 <strong>Description:</strong><br /> @room.Description
                             </p>

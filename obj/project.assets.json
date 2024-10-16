@@ -2345,19 +2345,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jmfafis\\.nuget\\packages\\": {}
+    "C:\\Users\\jmfsmof\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\CyberProj.csproj",
+      "projectUniqueName": "C:\\Users\\jmfsmof\\OneDrive - JM Family Enterprises\\Documents\\ITS academy projects\\Code Jams\\Code Jam 7\\Cyber-Project\\CyberProj.csproj",
       "projectName": "CyberProj",
-      "projectPath": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\CyberProj.csproj",
-      "packagesPath": "C:\\Users\\jmfafis\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\obj\\",
+      "projectPath": "C:\\Users\\jmfsmof\\OneDrive - JM Family Enterprises\\Documents\\ITS academy projects\\Code Jams\\Code Jam 7\\Cyber-Project\\CyberProj.csproj",
+      "packagesPath": "C:\\Users\\jmfsmof\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jmfsmof\\OneDrive - JM Family Enterprises\\Documents\\ITS academy projects\\Code Jams\\Code Jam 7\\Cyber-Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jmfafis\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jmfsmof\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

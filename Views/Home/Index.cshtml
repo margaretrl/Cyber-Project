@@ -1,9 +1,7 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cyber Threat Dashboard - Home</title>
+<title>CyberHub - Home</title>
 <style>
         /* Cybersecurity Theme */
         body {
@@ -64,29 +62,7 @@
             display: flex;
             flex-direction: column;
         }
- 
-        .news-item {
-            background-color: #333;
-            border-left: 5px solid #00ff9f;
-            padding: 15px;
-            margin-bottom: 20px;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 10px #00ff9f;
-        }
- 
-        .news-item:hover {
-            background-color: #222;
-        }
- 
-        .news-item h3 {
-            color: #f72585;
-            font-size: 1.5em;
-        }
- 
-        .news-item p {
-            font-size: 1.1em;
-            color: #ccc;
-        }
+
  
         /* Button style */
         .btn {
@@ -116,20 +92,7 @@
             margin-top: 40px;
         }
  
-        /* Diagram section */
-        .diagram {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #1a1a1a;
-            border: 2px solid #f72585;
-            box-shadow: 0 0 15px #00ff9f;
-        }
- 
-        .diagram img {
-            width: 60%;
-            margin-top: 20px;
-        }
+
 </style>
 </head>
 <body>
@@ -142,49 +105,32 @@
 <div class="section">
 <h2>About the Dashboard</h2>
 <p>Welcome to the Cyber Threat Dashboard, your comprehensive tool for monitoring real-time cybersecurity threats.
-            Our dashboard provides insights into the latest vulnerabilities, potential breaches, and threat actors.
-            Explore real-time data visualizations on current cyber threats, including trends and types of attacks. Stay updated and secure your digital assets with informed decision-making.</p>
+            Explore real-time data visualizations on current cyber threats and stay updated and secure your digital assets with informed decision-making.</p>
 </div>
- 
-        <!-- News feed -->
+
 <div class="section">
-<h2>Cybersecurity News</h2>
-<div class="news-feed">
-<!-- News item 1 -->
-<div class="news-item">
-<h3>Ransomware Attacks Surge in 2024</h3>
-<p>Security experts report an unprecedented rise in ransomware attacks targeting global industries.
-                    Learn how companies are adapting to the evolving threat landscape.</p>
-</div>
-<!-- News item 2 -->
-<div class="news-item">
-<h3>New Phishing Techniques Unveiled</h3>
-<p>Researchers have identified a new, more deceptive form of phishing attack.
-                    Protect your organization by staying informed about the latest phishing techniques.</p>
-</div>
-</div>
-</div>
+    <center>
+                <h2>Creators</h2>
+        <img src="~/Images/cyberjustin.png" alt="CyberJustin" width="230px" height="230px">
+        <img src="~/Images/melanie.png" alt="Melanie" width="230px" height="230px">
+        <img src="~/Images/margaret.png" alt="Margaret" width="230px" height="230px">
+    </center>
+</div> 
+
  
         <!-- TryHackMe Room Section -->
 <div class="section" id="tryhackme">
 <h2>TryHackMe Room: Hacking Challenges</h2>
-<p>Looking to enhance your hacking skills? Explore <a href="https://tryhackme.com/room/nameofroom" target="_blank">TryHackMe’s Hacking Room</a> 
+<p>Looking to enhance your hacking skills? Explore <a href="/Rooms" target="_blank">TryHackMe’s Hacking Room</a> 
             to participate in hands-on cybersecurity challenges and learning exercises. This room offers a variety of scenarios to test your knowledge in hacking, securing systems, and analyzing threats.</p>
 <p>Start your hacking journey and test your skills with the latest challenges!</p>
 </div>
  
-        <!-- Diagram and Dashboards Section -->
-<div class="section diagram" id="dashboard">
-<h2>Dashboard Diagrams</h2>
-<p>Here are some examples of how our cybersecurity dashboards visualize threats and attacks.</p>
-<!-- Placeholder for dashboard images -->
-<img src="dashboard_diagram.png" alt="Cybersecurity Dashboard Diagram">
-</div>
  
         <!-- Navigation buttons -->
 <div class="center-button">
-<a href="#tryhackme" class="btn">Go to TryHackMe Section</a>
-<a href="#dashboard" class="btn">Go to Dashboard Section</a>
+<a href="/rooms" class="btn">Go to TryHackMe Section</a>
+            <a href="/Threat" class="btn">Check for Cybersecurity Threats</a>
 </div>
 </div>
 </body>

@@ -30,7 +30,6 @@ footer {
 /* Toggle button styling */
 .toggle-btn {
     position: fixed;
-
     top: 20px;
     right: 20px;
     padding: 10px 20px;
@@ -138,4 +137,19 @@ body.light-mode {
 /* Change color when in dark mode */
 body.dark-mode .toggle-btn {
     color: #fff;
+}
+/* Dark Mode Section */
+body.dark-mode .section {
+    background-color: #1a1a1a; /* Dark background */
+    color: #00ff9f; /* Text color */
+    border: 2px solid #00ff9f; /* Green border */
+    box-shadow: 0 0 15px #f72585; /* Pink shadow */
+}
+
+/* Light Mode Section */
+body.light-mode .section {
+    background-color: #f0f0f0; /* Light background */
+    color: #2e2e2e; /* Dark text */
+    border: 2px solid #007bff; /* Blue border */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Blue shadow */
 }

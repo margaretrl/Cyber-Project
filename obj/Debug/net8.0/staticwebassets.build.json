@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8+2VnLwjwsHq3pKA2HHEx4mhYdMQ0OiPN+AXv3KqCjI=",
+  "Hash": "ClqdjTj6rxUKxcKAtmmSrzfmFP1vkX4PQZIyVaVVD7k=",
   "Source": "CyberProj",
   "BasePath": "_content/CyberProj",
   "Mode": "Default",
@@ -112,6 +112,25 @@
       "OriginalItemSpec": "wwwroot\\Images\\cyberjustin.png"
     },
     {
+      "Identity": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\wwwroot\\Images\\jon.png",
+      "SourceId": "CyberProj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\wwwroot\\",
+      "BasePath": "_content/CyberProj",
+      "RelativePath": "Images/jon.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\jon.png"
+    },
+    {
       "Identity": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\wwwroot\\Images\\margaret.png",
       "SourceId": "CyberProj",
       "SourceType": "Discovered",
@@ -148,6 +167,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\melanie.png"
+    },
+    {
+      "Identity": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\wwwroot\\Images\\vraj.png",
+      "SourceId": "CyberProj",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\wwwroot\\",
+      "BasePath": "_content/CyberProj",
+      "RelativePath": "Images/vraj.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\vraj.png"
     },
     {
       "Identity": "C:\\Users\\jmfafis\\OneDrive - JM Family Enterprises\\Desktop\\ITS_Academy_Projects\\Cyber Project\\wwwroot\\js\\site.js",

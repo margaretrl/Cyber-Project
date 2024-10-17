@@ -153,3 +153,44 @@ body.light-mode .section {
     border: 2px solid #007bff; /* Blue border */
     box-shadow: 0 0 15px rgba(0, 123, 255, 0.5); /* Blue shadow */
 }
+/* Dark Mode Header */
+body.dark-mode header {
+    background-color: #1a1a1a;
+    color: #00ff9f;
+    border-bottom: 2px solid #00ff9f;
+}
+
+/* Light Mode Header */
+body.light-mode header {
+    background-color: #f0f0f0;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+}
+
+<!-- Add the CSS for Dark and Light Modes -->
+<style >
+/* Dark Mode Styles */
+body.dark-mode .card-body {
+    background-color: #2c2f3f; /* Dark card background */
+    color: #fff; /* Light text */
+}
+
+body.dark-mode .chart-card {
+    background-color: #2c2f3f; /* Dark chart background */
+    color: #fff; /* Light text */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); /* Dark shadow */
+}
+
+/* Light Mode Styles */
+body.light-mode .card-body {
+    background-color: #f9f9f9; /* Light card background */
+    color: #000; /* Dark text */
+}
+
+body.light-mode .chart-card {
+    background-color: #f9f9f9; /* Light chart background */
+    color: #000; /* Dark text */
+    box-shadow: 0 0 15px rgba(0, 123, 255, 0.3); /* Light shadow */
+}
+
+</style >

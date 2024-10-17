@@ -27,26 +27,38 @@ namespace Cyber_Proj.Controllers
         }
 
         // Action to handle the form submission and check the URL
-        [HttpPost]
         public async Task<IActionResult> CheckUrl(string url)
         {
-            // Perform a scan on the provided URL
-            UrlReport urlReport = await _virusTotal.GetUrlReportAsync(url);
-
-            // Check if the URL has been scanned before
-            bool hasUrlBeenScannedBefore = urlReport.ResponseCode == UrlReportResponseCode.Present;
-
-            if (hasUrlBeenScannedBefore)
+            try
             {
-                // If the URL has been scanned, process the result
-                return View("ScanResult", urlReport);
+                // Perform a scan on the provided URL
+                UrlReport urlReport = await _virusTotal.GetUrlReportAsync(url);
+
+                // Check if the URL has been scanned before
+                bool hasUrlBeenScannedBefore = urlReport.ResponseCode == UrlReportResponseCode.Present;
+
+                if (hasUrlBeenScannedBefore)
+                {
+                    // If the URL has been scanned, process the result
+                    return View("ScanResult", urlReport);
+                }
+                else
+                {
+                    // If the URL hasn't been scanned before, submit it for scanning
+                    UrlScanResult scanResult = await _virusTotal.ScanUrlAsync(url);
+                    return View("ScanResult", scanResult);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                // If the URL hasn't been scanned before, submit it for scanning
-                UrlScanResult scanResult = await _virusTotal.ScanUrlAsync(url);
-                return View("ScanResult", scanResult);
+                // Log the exception (optional)
+                // _logger.LogError(ex, "Error scanning the URL");
+
+                // Pass the error message to the view
+                ViewBag.ErrorMessage = "An error occurred while processing your request: " + ex.Message;
+                return View("Error");
             }
         }
+
     }
 }

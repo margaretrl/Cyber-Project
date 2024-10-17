@@ -13,24 +13,22 @@
                     <p><strong>URL (Resource):</strong> @Model.Resource</p>
                     <p><strong>Scan Date:</strong> @Model.ScanDate</p>
                     <p><strong>Positives:</strong> @Model.Positives/@Model.Total</p>
+                    <p><h5>Scans</h5></p>
+                    <ul style="padding-top: 0;">
+                        @foreach (var scan in Model.Scans)
+                        {
+                            <li>
+                                <strong>@scan.Key:</strong> Detected: @scan.Value.Detected
+                            </li>
+                        }
+                    </ul>
                 </div>
-
                 <!-- Pie Chart for Positives vs Non-Positives -->
                 <div class="card ml-3 chart-card" style="width: 250px; height: 250px;">
                     <canvas id="positivesChart"></canvas>
                 </div>
             </div>
 
-            <!-- Scans List -->
-            <h4 style="margin-bottom: 0;">Scans:</h4>
-            <ul style="padding-top: 0;">
-                @foreach (var scan in Model.Scans)
-                {
-                    <li>
-                        <strong>@scan.Key:</strong> Detected: @scan.Value.Detected
-                    </li>
-                }
-            </ul>
             <p><a href="@Model.Permalink" target="_blank" class="btn btn-primary">View Full Report</a></p>
         </div>
     </div>

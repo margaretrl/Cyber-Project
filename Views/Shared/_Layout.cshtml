@@ -20,7 +20,7 @@
         }
 
         body.dark-mode .navbar-brand {
-            color: #00ffcc !important;  /* Make the CyberHub brand visible in dark mode with a neon green color */
+            color: #00ffcc !important;
         }
 
         body.light-mode .navbar {
@@ -33,7 +33,7 @@
         }
 
         body.light-mode .navbar-brand {
-            color: #000 !important;  /* Keep the brand dark in light mode */
+            color: #000 !important;
         }
 
         /* Button styles for theme toggle */
@@ -53,20 +53,7 @@
             transform: scale(1.05) !important;
         }
 
-        /* Optional media queries to adjust the button on different screen sizes */
-        @@media (min-width: 768px) {
-            .toggle-btn {
-                font-size: 1.2rem !important;
-                padding: 12px 24px !important;
-            }
-        }
 
-        @@media (max-width: 767px) {
-            .toggle-btn {
-                font-size: 1rem !important;
-                padding: 8px 16px !important;
-            }
-        }
     </style>
 </head>
 <body>
@@ -91,7 +78,7 @@
                         </li>
                     </ul>
 
-                    <!-- Toggle Button with Image for Theme Switching -->
+                    <!-- Toggle Button with vraj for theme switching -->
                     <button class="btn toggle-btn" id="themeToggle" onclick="toggleTheme()" aria-label="Toggle theme">
                         <img id="themeIcon" src="~/images/vraj.png" alt="Theme Icon" width="20px" height="20px"> <!-- Image for dark mode -->
                     </button>
@@ -108,7 +95,6 @@
 
     <footer class="border-top footer text-muted">
         <div class="container text-center">
-            <!-- Added 'text-center' class -->
             &copy; 2024 - CyberHub - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
@@ -118,7 +104,7 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
-    <!-- Add the JavaScript for Theme Toggle -->
+    <!-- JS Theme Toggle -->
     <script>
         // Check if a theme is already stored in localStorage
         const currentTheme = localStorage.getItem('theme') || 'dark-mode';
@@ -139,7 +125,7 @@
 
             if (bodyClassList.contains('dark-mode')) {
                 bodyClassList.replace('dark-mode', 'light-mode');
-                themeIcon.src = 'images/light-mode-icon.png'; // Image for light mode
+                themeIcon.src = 'images/vraj.png'; // Image for light mode
                 localStorage.setItem('theme', 'light-mode');  // Save preference
             } else {
                 bodyClassList.replace('light-mode', 'dark-mode');

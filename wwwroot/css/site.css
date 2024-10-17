@@ -1,4 +1,3 @@
-/* Base Styles */
 html {
     font-size: 14px;
 }
@@ -14,7 +13,7 @@ html, body {
     min-height: 100%;
     margin: 0;
     padding: 0;
-    padding-bottom: 60px; /* Give enough space for the footer */
+    padding-bottom: 60px; 
     margin-bottom: 60px;
 }
 
@@ -121,8 +120,8 @@ body.light-mode {
 .toggle-btn {
     background-color: transparent;
     border: none;
-    color: #333; /* Adjust the color based on your navbar theme */
-    font-size: 1.5rem; /* Icon size */
+    color: #333;
+    font-size: 1.5rem;
     cursor: pointer;
     transition: color 0.3s ease;
 }
@@ -132,10 +131,9 @@ body.light-mode {
     }
 
     .toggle-btn:hover {
-        color: #ff007f; /* Hover color */
+        color: #ff007f; 
     }
 
-/* Change color when in dark mode */
 body.dark-mode .toggle-btn {
     color: #fff;
 }

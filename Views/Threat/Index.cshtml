@@ -5,9 +5,9 @@
 <h2>Check URL for Cybersecurity Threats</h2>
 
 <form asp-action="CheckUrl" method="post">
-    <div class="form-group">
-        <label for="urlInput">Enter URL:</label>
-        <input type="text" id="urlInput" name="url" class="form-control" placeholder="https://example.com" required>
+    <div class="form-group d-flex align-items-center"><br />
+        <label for="urlInput" class="mr-3" style="margin-right: 10px;">Enter URL:</label>
+        <input type="text" id="urlInput" name="url" class="form-control" placeholder="https://example.com" required style="flex: 1; margin-right: 10px;">
+        <button type="submit" class="btn btn-primary">Check URL</button><br />
     </div>
-    <button type="submit" class="btn btn-primary">Check URL</button>
 </form>
